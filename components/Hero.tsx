@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 const icons = [
   { id: 1, src: "/images/figma.svg", alt: "Figma", color: "bg-purple-500/10" },
   { id: 2, src: "/images/tailwindcss.svg", alt: "Tailwind", color: "bg-blue-500/10" },
-  { id: 3, src: "/images/gitHub.svg", alt: "GitHub", color: "bg-gray-500/10" },
+  { id: 3, src: "/images/github.svg", alt: "GitHub", color: "bg-gray-500/10" },
   { id: 4, src: "/images/react.svg", alt: "React", color: "bg-cyan-500/10" },
   { id: 5, src: "/images/xd.svg", alt: "AdobeXD", color: "bg-blue-400/10" },
 ];
