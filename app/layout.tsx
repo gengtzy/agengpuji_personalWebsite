@@ -10,7 +10,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Ageng Portfolio",
+  title: "Ageng_Personal Website",
   description: "UI/UX Designer & Frontend Developer",
 };
 
