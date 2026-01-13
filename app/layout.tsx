@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 
-// 2. Konfigurasi font
 const dmSans = DM_Sans({ 
   subsets: ["latin"],
   weight: ["400", "500", "700"],

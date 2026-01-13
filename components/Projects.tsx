@@ -228,6 +228,19 @@ const allProjects = [
       { name: "Bootstrap", icon: "/images/bootstrap5.svg" },
     ] as Tech[],
   },
+  {
+    id: 15,
+    title: "SI SD Gimatama",
+    category: "web",
+    image: "/images/code11.png",
+    description:
+      "Comprehensive school information system for SD Gimatama built on WordPress, serving as a digital hub for academic news, profiles, and institutional updates.",
+    link: "https://github.com/gengtzy",
+    visit: "https://sdgimatama.wordpress.com/",
+    techStack: [
+      { name: "Wordpress", icon: "/images/wordpress.svg" },
+    ] as Tech[],
+  },
 ];
 
 export default function Projects() {
