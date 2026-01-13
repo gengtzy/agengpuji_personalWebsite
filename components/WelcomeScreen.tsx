@@ -50,7 +50,7 @@ export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
 
           <div className="absolute inset-0 bg-[#05e448] opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
 
-          <span className="relative z-10 font-medium text-[#05e448] group-hover:text-white transition-colors duration-300 flex items-center gap-2">
+          <span className="relative z-10 font-medium text-[#05e448] group-hover:text-white transition-colors duration-300 flex items-center gap-2 cursor-pointer">
             Enter My Personal Website
             <svg
               width="16"

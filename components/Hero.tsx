@@ -126,7 +126,7 @@ export default function Hero() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-medium text-white leading-tight">
-              UI/UX Engineer
+              Web Developer
             </h1>
             
             <div className="h-8 flex items-center">

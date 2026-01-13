@@ -1,16 +1,38 @@
 @import "tailwindcss";
 
 :root {
-  --neon-green: #2AF598; 
-  --dark-bg: #02050A;
+  --neon-green: #2af598;
+  --dark-bg: #02050a;
 }
 
 body {
   background-color: var(--dark-bg);
   color: white;
-  background-image: radial-gradient(circle at 50% 0%, #112240 0%, #02050A 50%);
+  background-image: radial-gradient(circle at 50% 0%, #112240 0%, #02050a 50%);
 }
 
 .glow-text {
   text-shadow: 0 0 20px rgba(42, 245, 152, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #02050a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #05e448;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #04c23c;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #05e448 #02050a;
 }

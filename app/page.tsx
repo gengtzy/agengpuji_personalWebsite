@@ -10,6 +10,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WelcomeScreen from "@/components/WelcomeScreen";
+import ScrollProgress from "@/components/ScrollProgress";
 
 export default function Home() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -35,6 +36,7 @@ export default function Home() {
         <Projects />
         <Contact />
         <Footer />
+        <ScrollProgress />
       </div>
     </main>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Container from "./Container";
 import CertificateCard from "./CertificateCard";
@@ -86,16 +87,15 @@ export default function About() {
       className="space-y-6 animate-in fade-in slide-in-from-right-4 duration-500"
     >
       <p className="text-gray-400 leading-relaxed text-lg">
-        I am a student at{" "}
+        Informatics Engineering student at{" "}
         <span className="text-white font-semibold">
           Jember State Polytechnic
         </span>
-        , majoring in Information Technology with a focus on Informatics
-        Engineering. I'm currently pursuing a role as a Junior Frontend
-        Engineer. I'm adept at working in a team and have had graphic design
-        skills for almost two years. I'm also interested in further enhancing my
-        design skills, particularly in UI/UX, in line with my interest in
-        frontend development.
+        , and an Web Developer specializing in Frontend Engineering. I apply my
+        understanding of design principles to bridge the gap between code and
+        aesthetics. Currently seeking a role where I can focus on client-side
+        development, crafting responsive and visually compelling interfaces with
+        a strong emphasis on UI/UX.
       </p>
       <div className="space-y-3">
         <div className="flex items-center">
@@ -109,6 +109,142 @@ export default function About() {
         <div className="flex items-center">
           <span className="w-28 text-white font-semibold">Email :</span>
           <span className="text-gray-400">agengpujipangestu3@email.com</span>
+        </div>
+      </div>
+
+      <div className="space-y-3 pt-2">
+        <h3 className="text-white font-semibold text-lg">Tech Stack</h3>
+        <div className="flex flex-wrap gap-3">
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/laravel.svg"
+                alt="Laravel"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>Laravel</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/nodejs.svg"
+                alt="Next.js"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>Node.js</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/tailwindcss2.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>Tailwind</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/bootstrap5.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>Bootstrap</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/react2.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>React.js</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/html5.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>HTML5</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/css3.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>CSS3</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/mysql.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>MySQL</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/figma2.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>Figma</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/xd2.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>AdobeXD</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/canva2.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>Canva</span>
+          </div>
         </div>
       </div>
     </div>,
@@ -125,27 +261,68 @@ export default function About() {
           <div className="relative w-4 h-4 bg-[#05e448] rounded-full shadow-[0_0_15px_#05e448]"></div>
         </div>
 
-        <h3 className="text-xl font-bold text-white">
-          Graphic Designer in SzonaRempah
-        </h3>
-        <span className="text-sm text-[#05e448] font-mono">2022 - Present</span>
-        <p className="text-gray-400 mt-2 text-sm leading-relaxed">
-          Creating social media visual content, promotional materials, and
-          herbal product packaging designs using Canva and Figma to maximize
-          product image and customer interaction.
-        </p>
+        <h3 className="text-xl font-bold text-white">SzonaRempah</h3>
+        <div className="flex justify-between">
+          <span className="text-sm text-[#05e448] font-mono">
+            Graphic Designer (Freelance)
+          </span>
+          <span className="text-sm text-[#05e448] font-mono">
+            2022 - Present
+          </span>
+        </div>
+        <ul className="text-gray-400 mt-2 text-sm leading-relaxed list-disc pl-5">
+          <li>
+            Create engaging visual content for social media platforms
+            (Instagram/TikTok) to increase brand awareness and customer
+            engagement.
+          </li>
+          <li>
+            Design marketing collateral such as menus, banners, brochures, and
+            product catalogs using Canva and Figma.
+          </li>
+          <li>
+            Develop packaging designs and labels for new herbal product lines to
+            ensure a professional and attractive product presentation.
+          </li>
+          <li>
+            Collaborate with the business owner to translate marketing concepts
+            into consistent visual identities across all media channels.
+          </li>
+        </ul>
       </div>
 
       <div className="relative pl-10 pb-2">
         <div className="absolute left-[2px] top-2 w-3 h-3 bg-gray-600 rounded-full border-4 border-[#02050A] z-10"></div>
 
-        <h3 className="text-xl font-bold text-white">UI/UX Designer Intern</h3>
-        <span className="text-sm text-gray-500 font-mono">2025 - 2025</span>
-        <p className="text-gray-400 mt-2 text-sm leading-relaxed">
-          Help develop digital products (ezSign) that are not only visually
-          appealing (UI) but also easy to use and provide a pleasant user
-          experience (UX).
-        </p>
+        <h3 className="text-xl font-bold text-white">
+          PT Solusi Identitas Global Net
+        </h3>
+        <div className="flex justify-between">
+          <span className="text-sm text-gray-500 font-mono">
+            UI/UX Designer (Internship)
+          </span>
+          <span className="text-sm text-gray-500 font-mono">2025 - 2025</span>
+        </div>
+        <ul className="text-gray-400 mt-2 text-sm leading-relaxed list-disc pl-5">
+          <li>
+            Designed and prototyped user-friendly interfaces for web-based
+            applications using Figma, ensuring alignment with user needs and
+            project requirements.
+          </li>
+          <li>
+            Created wireframes, user flows, and site maps to visualize design
+            concepts and streamline complex information structures.
+          </li>
+          <li>
+            Contributed to the development of design systems, including color
+            palettes, typography, and iconography, to maintain visual
+            consistency across products.
+          </li>
+          <li>
+            Collaborated closely with the development team to ensure accurate
+            design implementation and smooth handover process.
+          </li>
+        </ul>
       </div>
     </div>,
 
@@ -198,14 +375,15 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 relative">
+    <section id="about" className="py-24 relative overflow-hidden">
+      <div className="absolute top-1/2 -left-[200px] -translate-y-1/2 w-[500px] h-[500px] bg-[#05e448]/10 rounded-full blur-[120px] -z-10 opacity-60"></div>
+
       <Container>
-        {/* === ANIMASI JUDUL: FADE UP === */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }} // Animasi cuma sekali biar ga ganggu pas scroll naik turun
+          viewport={{ once: true }}
           className="mb-20 text-center"
         >
           <h2 className="text-4xl md:text-5xl font-semibold text-white">
@@ -213,11 +391,10 @@ export default function About() {
           </h2>
         </motion.div>
 
-        {/* === ANIMASI KONTEN UTAMA: FADE UP (DELAYED) === */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }} // Delay dikit biar muncul setelah judul
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
           viewport={{ once: true }}
           className="flex flex-col md:flex-row gap-12 md:gap-20 items-start"
         >
