@@ -186,6 +186,7 @@ export default function About() {
             </div>
             <span>HTML5</span>
           </div>
+
           <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
             <div className="relative w-4 h-4">
               <Image
@@ -196,6 +197,18 @@ export default function About() {
               />
             </div>
             <span>CSS3</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/sass.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>SASS</span>
           </div>
 
           <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
