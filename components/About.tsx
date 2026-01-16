@@ -118,7 +118,7 @@ export default function About() {
           <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
             <div className="relative w-4 h-4">
               <Image
-                src="/images/laravel.svg"
+                src="/images/laravel2.svg"
                 alt="Laravel"
                 fill
                 className="object-contain"
@@ -214,6 +214,30 @@ export default function About() {
           <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
             <div className="relative w-4 h-4">
               <Image
+                src="/images/github2.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>Github</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/git.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>Git</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
                 src="/images/mysql.svg"
                 alt="Tailwind"
                 fill
@@ -245,6 +269,18 @@ export default function About() {
               />
             </div>
             <span>AdobeXD</span>
+          </div>
+
+          <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">
+            <div className="relative w-4 h-4">
+              <Image
+                src="/images/affinity.svg"
+                alt="Tailwind"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <span>Affinity</span>
           </div>
 
           <div className="flex items-center gap-2 px-4 py-1.5 border border-[#05e448] rounded-full text-[#05e448] text-sm font-medium hover:bg-[#05e448]/10 transition-colors cursor-default">

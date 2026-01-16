@@ -10,7 +10,7 @@ const icons = [
   { id: 2, src: "/images/tailwindcss.svg", alt: "Tailwind", color: "bg-blue-500/10" },
   { id: 3, src: "/images/github.svg", alt: "GitHub", color: "bg-gray-500/10" },
   { id: 4, src: "/images/react.svg", alt: "React", color: "bg-cyan-500/10" },
-  { id: 5, src: "/images/xd.svg", alt: "AdobeXD", color: "bg-blue-400/10" },
+  { id: 5, src: "/images/laravel.svg", alt: "Laravel", color: "bg-blue-400/10" },
 ];
 
 const positions = [
