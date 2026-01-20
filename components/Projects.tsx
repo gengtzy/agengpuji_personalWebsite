@@ -220,8 +220,8 @@ const allProjects = [
     image: "/images/code12.png",
     description:
       "Global movie search platform powered by the OMDb API, featuring a minimalist user interface for effortless film discovery and detailed information retrieval.",
-    link: "https://simple-movie-search.vercel.app/",
-    visit: "https://github.com/gengtzy/Simple-Movie-Search",
+    visit: "https://simple-movie-search.vercel.app/",
+    link: "https://github.com/gengtzy/Simple-Movie-Search",
     techStack: [
       { name: "HTML5", icon: "/images/html5.svg" },
       { name: "JQuery", icon: "/images/jquery.svg" },
