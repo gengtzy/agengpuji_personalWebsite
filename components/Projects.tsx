@@ -214,6 +214,22 @@ const allProjects = [
     ] as Tech[],
   },
   {
+    id: 16,
+    title: "MovieKu",
+    category: "web",
+    image: "/images/code12.png",
+    description:
+      "Global movie search platform powered by the OMDb API, featuring a minimalist user interface for effortless film discovery and detailed information retrieval.",
+    link: "https://simple-movie-search.vercel.app/",
+    visit: "https://github.com/gengtzy/Simple-Movie-Search",
+    techStack: [
+      { name: "HTML5", icon: "/images/html5.svg" },
+      { name: "JQuery", icon: "/images/jquery.svg" },
+      { name: "Bootstrap", icon: "/images/bootstrap5.svg" },
+      { name: "OMDb API", icon: "/images/api.svg" },
+    ] as Tech[],
+  },
+  {
     id: 8,
     title: "Company Cafe Profile",
     category: "web",
@@ -237,15 +253,13 @@ const allProjects = [
       "Comprehensive school information system for SD Gimatama built on WordPress, serving as a digital hub for academic news, profiles, and institutional updates.",
     link: "https://github.com/gengtzy",
     visit: "https://sdgimatama.wordpress.com/",
-    techStack: [
-      { name: "Wordpress", icon: "/images/wordpress.svg" },
-    ] as Tech[],
+    techStack: [{ name: "Wordpress", icon: "/images/wordpress.svg" }] as Tech[],
   },
 ];
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState<"all" | "ui" | "web">(
-    "all"
+    "all",
   );
 
   const filteredProjects =
