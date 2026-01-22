@@ -215,6 +215,22 @@ const allProjects = [
   },
   {
     id: 16,
+    title: "Shoppink (Midtrans Payment Demo)",
+    category: "web",
+    image: "/images/code13.png",
+    description:
+      "A simple e-commerce checkout demo built with Next.js App Router and integrated with Midtrans Payment Gateway (Snap).",
+    visit: "https://midtrans-payment-demo.vercel.app/",
+    link: "https://github.com/gengtzy/midtrans-payment-demo",
+    techStack: [
+      { name: "Javascript", icon: "/images/js.svg" },
+      { name: "Tailwind", icon: "/images/tailwindcss2.svg" },
+      { name: "Next.js", icon: "/images/nextjs2.svg" },
+      { name: "Midtrans", icon: "/images/midtrans.svg" },
+    ] as Tech[],
+  },
+  {
+    id: 17,
     title: "MovieKu",
     category: "web",
     image: "/images/code12.png",
