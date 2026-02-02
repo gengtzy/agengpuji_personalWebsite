@@ -44,6 +44,19 @@ export const allProjects = [
     ] as Tech[],
   },
   {
+    id: 20,
+    title: "Landing Page Website Design - AdsFlow.ai",
+    category: "ui",
+    image: "/images/dsg6.png",
+    description:
+      "Landing page design for AdsFlow.ai, an AI-powered advertising platform, focusing on user engagement and conversion optimization.",
+    link: "https://www.behance.net/gallery/243397715/Landing-Page-Website-AdsFlowai",
+    techStack: [
+      { name: "Figma", icon: "/images/figma2.svg" },
+      { name: "Canva", icon: "/images/canva2.svg" },
+    ] as Tech[],
+  },
+  {
     id: 10,
     title: "Relasibaik.",
     category: "web",
@@ -158,6 +171,21 @@ export const allProjects = [
       { name: "Laravel", icon: "/images/laravel2.svg" },
       { name: "Filament", icon: "/images/laravel2.svg" },
       { name: "Supabase", icon: "/images/supabase.svg" },
+    ] as Tech[],
+  },
+  {
+    id: 19,
+    title: "AdsFlow.ai",
+    category: "web",
+    image: "/images/code15.png",
+    description:
+      "AI-powered advertising platform for managing and optimizing digital ad campaigns across multiple channels.",
+    link: "https://github.com/gengtzy/landingpage_adsflow",
+    visit: "https://landingpage-adsflow.vercel.app/",
+    techStack: [
+      { name: "HTML5", icon: "/images/html5.svg" },
+      { name: "SASS", icon: "/images/sass.svg" },
+      { name: "CSS3", icon: "/images/css3.svg" },
     ] as Tech[],
   },
   {
