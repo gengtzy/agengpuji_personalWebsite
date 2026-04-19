@@ -64,6 +64,7 @@ export const allProjects = [
     description:
       "Web-based expert system utilizing Rule-Based Reasoning method to analyze family dynamics and screen the quality of relationships between parents and relatives.",
     link: "https://github.com/gengtzy",
+    visit: "https://relasibaikapp.vercel.app/",
     techStack: [
       { name: "Node.js", icon: "/images/nodejs.svg" },
       { name: "Laravel", icon: "/images/laravel2.svg" },
