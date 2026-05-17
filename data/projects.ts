@@ -197,6 +197,7 @@ export const allProjects = [
     description:
       "Community information portal designed for Sidokerto Village, featuring the latest news updates, village profiles, and public information access.",
     link: "https://github.com/gengtzy/websiteDesaSidokerto",
+    visit: "https://sidokerto-6aqwl9zqt-ageng-puji-pangestus-projects.vercel.app/",
     techStack: [
       { name: "HTML5", icon: "/images/html5.svg" },
       { name: "Javascript", icon: "/images/js.svg" },
