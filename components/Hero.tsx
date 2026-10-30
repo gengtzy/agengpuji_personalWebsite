@@ -107,21 +107,20 @@ export default function Hero() {
             className="w-full md:w-1/2 space-y-12 mt-10 md:mt-0"
           >
             
-            <div className="relative inline-flex items-center gap-2 px-6 py-2 border border-white/20 text-white tracking-wider bg-white/5 backdrop-blur-sm group">
+            <motion.div
+              drag
+              dragSnapToOrigin
+              dragElastic={0.25}
+              whileHover={{ scale: 1.02, cursor: "grab" }}
+              whileDrag={{ scale: 1.05, cursor: "grabbing" }}
+              className="relative inline-flex items-center gap-2 px-6 py-2 border border-white/20 text-white tracking-wider bg-white/5 backdrop-blur-sm group select-none cursor-grab active:cursor-grabbing"
+            >
               <span className="absolute -top-1 -left-1 w-1.5 h-1.5 bg-[#05e448]"></span>
               <span className="absolute -top-1 -right-1 w-1.5 h-1.5 bg-[#05e448]"></span>
               <span className="absolute -bottom-1 -left-1 w-1.5 h-1.5 bg-[#05e448]"></span>
+              <span className="absolute -bottom-1 -right-1 w-1.5 h-1.5 bg-[#05e448]"></span>
 
-              <motion.span
-                drag
-                dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
-                dragElastic={0.2}
-                whileHover={{ scale: 1.5, cursor: "grab" }}
-                whileDrag={{ cursor: "grabbing" }}
-                className="absolute -bottom-1 -right-1 w-2 h-2 bg-[#05e448] z-50"
-              ></motion.span>
-
-              <div className="absolute -right-18 top-2 md:-top-6 flex flex-col items-start opacity-70 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="absolute -right-18 top-2 md:-top-6 flex flex-col items-start opacity-70 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                 <span className="text-[10px] md:text-xs text-gray-400 font-mono -rotate-6 translate-x-4 mb-1">
                   pull me!
                 </span>
@@ -133,7 +132,7 @@ export default function Hero() {
               </div>
 
               <span className="text-sm font-medium">Hi,👋 I'm Ageng</span>
-            </div>
+            </motion.div>
 
             <div className="space-y-3">
               <div className="relative flex items-center">
@@ -166,8 +165,10 @@ export default function Hero() {
               </a>
 
               <a 
-                href="/AgengPujiPangestuCV.pdf" 
-                download
+                href="/Ageng%20Puji%20Pangestu%20CV.pdf" 
+                download="Ageng Puji Pangestu CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-3 border border-gray-700 text-gray-300 rounded-2xl hover:border-[#05e448] hover:text-[#05e448] transition cursor-pointer"
               >
                 My Resume

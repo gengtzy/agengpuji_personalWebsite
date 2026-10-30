@@ -46,12 +46,12 @@ export default function Contact() {
             href="https://www.linkedin.com/in/ageng-puji-pangestu-1850a3235/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:border-[#05e448] hover:text-[#05e448] hover:scale-110 transition-all duration-300"
+            title="LinkedIn"
+            aria-label="LinkedIn Profile"
+            className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:border-[#05e448] hover:text-[#05e448] hover:bg-[#05e448]/10 hover:shadow-[0_0_20px_rgba(5,228,72,0.3)] hover:scale-110 transition-all duration-300"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.76.78 1.76 1.75-.79 1.76-1.76 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z" />
             </svg>
           </a>
 
@@ -59,10 +59,12 @@ export default function Contact() {
             href="https://www.behance.net/agengppangest"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:border-[#05e448] hover:text-[#05e448] hover:scale-110 transition-all duration-300"
+            title="Behance"
+            aria-label="Behance Portfolio"
+            className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:border-[#05e448] hover:text-[#05e448] hover:bg-[#05e448]/10 hover:shadow-[0_0_20px_rgba(5,228,72,0.3)] hover:scale-110 transition-all duration-300"
           >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M22 7h-5V6h5v1zm-6 4.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0zM12.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zm5.67-1.32c-.11-2.6-3.8-2.68-3.67 1.05h3.67zm-3.79 2.05c.18 2.76 3.84 2.47 3.55.3h1.9c.27 2.9-4.7 4.14-5.45.66-.9-4.22 5.03-5.38 5.6-1.1.04.28.05.56.05.84h-5.65zM7.5 7H2v10h5.5c2.4 0 3.8-1.5 3.8-3.5S9.9 8.6 7.5 7H7.5zm0 2.3c.7 0 1.5.3 1.5 1.5s-.8 1.4-1.5 1.4H4.3V9.3H7.5zm.3 6.4H4.3v-2.7h3.5c.8 0 1.7.4 1.7 1.6s-.9 1.1-1.7 1.1z" />
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22 7h-7v1.5h7V7zm-1.8 4.7c-.2-.6-.6-1.1-1.1-1.4-.5-.3-1.1-.4-1.8-.4-1.1 0-2 .4-2.7 1.1-.7.7-1.1 1.7-1.1 3 0 1.2.4 2.2 1.1 3 .7.7 1.6 1.1 2.8 1.1 1 0 1.8-.3 2.5-.8.7-.5 1-1.2 1.2-2.1h-2.1c-.1.4-.3.7-.6.9-.3.2-.8.3-1.3.3-.6 0-1-.2-1.4-.5-.4-.3-.6-.8-.7-1.5h5.3c0-.4 0-.8-.2-1.2zm-5.1 1.5c.1-.5.3-.9.6-1.2.3-.3.7-.5 1.2-.5.5 0 .9.2 1.2.5.3.3.5.7.5 1.2h-3.5zM8.3 12.8c.7-.2 1.2-.6 1.6-1.1.4-.5.6-1.1.6-1.8 0-.9-.3-1.6-.9-2.1-.6-.5-1.5-.8-2.6-.8H2v14h5.2c1.2 0 2.2-.3 2.9-.9.7-.6 1-1.5 1-2.5 0-.8-.2-1.5-.7-2.1-.5-.6-1.2-.9-2.1-1zM4.6 9.1h2.2c.5 0 .9.1 1.2.4.3.2.4.6.4 1 0 .4-.1.8-.4 1-.3.2-.7.3-1.2.3H4.6V9.1zm2.4 7.7H4.6v-3.1h2.4c.6 0 1.1.1 1.4.4.3.3.5.7.5 1.1 0 .5-.2.9-.5 1.2-.3.3-.8.4-1.4.4z" />
             </svg>
           </a>
 
@@ -70,21 +72,12 @@ export default function Contact() {
             href="https://www.instagram.com/ggngpjip_/"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:border-[#05e448] hover:text-[#05e448] hover:scale-110 transition-all duration-300"
+            title="Instagram"
+            aria-label="Instagram Profile"
+            className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:border-[#05e448] hover:text-[#05e448] hover:bg-[#05e448]/10 hover:shadow-[0_0_20px_rgba(5,228,72,0.3)] hover:scale-110 transition-all duration-300"
           >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
             </svg>
           </a>
 
@@ -92,10 +85,12 @@ export default function Contact() {
             href="https://wa.me/6282244958864"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:border-[#05e448] hover:text-[#05e448] hover:scale-110 transition-all duration-300"
+            title="WhatsApp"
+            aria-label="WhatsApp Contact"
+            className="w-12 h-12 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:border-[#05e448] hover:text-[#05e448] hover:bg-[#05e448]/10 hover:shadow-[0_0_20px_rgba(5,228,72,0.3)] hover:scale-110 transition-all duration-300"
           >
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.98-.15.17-.29.19-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.09s.9 2.43 1.03 2.6c.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.22-.16-.47-.29z" />
             </svg>
           </a>
         </motion.div>

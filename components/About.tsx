@@ -91,16 +91,12 @@ export default function About() {
         <span className="text-white font-semibold">
           Jember State Polytechnic
         </span>
-        , and an Web Developer specializing in Frontend Engineering. I apply my
-        understanding of design principles to bridge the gap between code and
-        aesthetics. Currently seeking a role where I can focus on client-side
-        development, crafting responsive and visually compelling interfaces with
-        a strong emphasis on UI/UX.
+        , and a Full Stack Web Developer. I combine a strong foundation in server-side architecture and databases with specialized expertise in Frontend Engineering and UI/UX refinement. By bridging the gap between robust backend logic (using tools like Laravel and MySQL) and intuitive aesthetics (with React and Tailwind CSS), I build seamless end-to-end applications. Currently seeking a full-stack role to develop scalable systems while crafting responsive, visually compelling, and user-centric interfaces.
       </p>
       <div className="space-y-3">
         <div className="flex items-center">
           <span className="w-28 text-white font-semibold">Age :</span>
-          <span className="text-gray-400">21</span>
+          <span className="text-gray-400">22</span>
         </div>
         <div className="flex items-center">
           <span className="w-28 text-white font-semibold">Address :</span>
@@ -131,7 +127,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/nodejs.svg"
-                alt="Next.js"
+                alt="Node.js"
                 fill
                 className="object-contain"
               />
@@ -143,7 +139,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/tailwindcss2.svg"
-                alt="Tailwind"
+                alt="Tailwind CSS"
                 fill
                 className="object-contain"
               />
@@ -155,7 +151,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/bootstrap5.svg"
-                alt="Tailwind"
+                alt="Bootstrap"
                 fill
                 className="object-contain"
               />
@@ -167,7 +163,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/react2.svg"
-                alt="Tailwind"
+                alt="React.js"
                 fill
                 className="object-contain"
               />
@@ -179,7 +175,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/html5.svg"
-                alt="Tailwind"
+                alt="HTML5"
                 fill
                 className="object-contain"
               />
@@ -191,7 +187,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/css3.svg"
-                alt="Tailwind"
+                alt="CSS3"
                 fill
                 className="object-contain"
               />
@@ -203,7 +199,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/sass.svg"
-                alt="Tailwind"
+                alt="SASS"
                 fill
                 className="object-contain"
               />
@@ -215,7 +211,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/github2.svg"
-                alt="Tailwind"
+                alt="GitHub"
                 fill
                 className="object-contain"
               />
@@ -227,7 +223,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/git.svg"
-                alt="Tailwind"
+                alt="Git"
                 fill
                 className="object-contain"
               />
@@ -239,7 +235,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/mysql.svg"
-                alt="Tailwind"
+                alt="MySQL"
                 fill
                 className="object-contain"
               />
@@ -251,7 +247,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/figma2.svg"
-                alt="Tailwind"
+                alt="Figma"
                 fill
                 className="object-contain"
               />
@@ -263,7 +259,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/xd2.svg"
-                alt="Tailwind"
+                alt="Adobe XD"
                 fill
                 className="object-contain"
               />
@@ -275,7 +271,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/affinity.svg"
-                alt="Tailwind"
+                alt="Affinity"
                 fill
                 className="object-contain"
               />
@@ -287,7 +283,7 @@ export default function About() {
             <div className="relative w-4 h-4">
               <Image
                 src="/images/canva2.svg"
-                alt="Tailwind"
+                alt="Canva"
                 fill
                 className="object-contain"
               />
@@ -316,7 +312,7 @@ export default function About() {
             Graphic Designer (Freelance)
           </span>
           <span className="text-sm text-[#05e448] font-mono">
-            2022 - Present
+            2022 - 2026
           </span>
         </div>
         <ul className="text-gray-400 mt-2 text-sm leading-relaxed list-disc pl-5">
@@ -380,6 +376,13 @@ export default function About() {
       className="flex flex-col gap-4 animate-in fade-in slide-in-from-right-4 duration-500"
     >
       <div className="grid grid-cols-1 gap-4">
+        <CertificateCard
+          title="Web Developer"
+          publisher="Badan Nasional Sertifikasi Profesi (BNSP)"
+          date="2026"
+          logoSrc="/images/bnsp.png"
+          certImageSrc="/images/bnspimg.png"
+        />
         <CertificateCard
           title="AI Productivity and AI API Integration for Developers"
           publisher="Hacktiv8 Indonesia"
@@ -454,11 +457,10 @@ export default function About() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(index)}
-                  className={`relative pl-10 py-2 text-left flex items-center gap-4 text-xl transition-all duration-300 group ${
-                    activeTab === index
+                  className={`relative pl-10 py-2 text-left flex items-center gap-4 text-xl transition-all duration-300 group ${activeTab === index
                       ? "text-white"
                       : "text-gray-500 hover:text-gray-300"
-                  }`}
+                    }`}
                 >
                   {activeTab === index && (
                     <motion.div
@@ -472,9 +474,8 @@ export default function About() {
                     />
                   )}
                   <div
-                    className={`${
-                      activeTab === index ? "text-[#05e448] scale-110" : ""
-                    } transition-transform duration-300`}
+                    className={`${activeTab === index ? "text-[#05e448] scale-110" : ""
+                      } transition-transform duration-300`}
                   >
                     {tab.icon}
                   </div>

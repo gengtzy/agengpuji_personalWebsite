@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
 
         <p className="text-gray-500 text-sm font-light tracking-wide">
-          2025 Copyright | agengpuji
+          {new Date().getFullYear()} Copyright | agengpuji
         </p>
         
       </Container>

@@ -72,7 +72,6 @@ const vertex = /* glsl */ `
     }
     
     gl_Position = projectionMatrix * mvPos;
-    gl_Position = projectionMatrix * mvPos;
   }
 `;
 
@@ -139,15 +138,26 @@ const Particles: React.FC<ParticlesProps> = ({
     window.addEventListener('resize', resize, false);
     resize();
 
+    const targetMouse = { x: 0, y: 0 };
+    const smoothedMouse = { x: 0, y: 0 };
+
     const handleMouseMove = (e: MouseEvent) => {
-      const rect = container.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
-      const y = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
-      mouseRef.current = { x, y };
+      // Normalisasi koordinat kursor relatif terhadap window
+      const x = (e.clientX / window.innerWidth) * 2 - 1;
+      const y = -((e.clientY / window.innerHeight) * 2 - 1);
+      targetMouse.x = x;
+      targetMouse.y = y;
+    };
+
+    const handleMouseLeave = () => {
+      // Ketika kursor meninggalkan browser, partikel kembali perlahan ke tengah
+      targetMouse.x = 0;
+      targetMouse.y = 0;
     };
 
     if (moveParticlesOnHover) {
-      container.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mousemove', handleMouseMove, { passive: true });
+      document.addEventListener('mouseleave', handleMouseLeave);
     }
 
     const count = particleCount;
@@ -206,17 +216,27 @@ const Particles: React.FC<ParticlesProps> = ({
       program.uniforms.uTime.value = elapsed * 0.001;
 
       if (moveParticlesOnHover) {
-        particles.position.x = -mouseRef.current.x * particleHoverFactor;
-        particles.position.y = -mouseRef.current.y * particleHoverFactor;
+        // Interpolasi lembut (lerp) dengan faktor 0.05 untuk pergerakan halus bebas patah-patah
+        smoothedMouse.x += (targetMouse.x - smoothedMouse.x) * 0.05;
+        smoothedMouse.y += (targetMouse.y - smoothedMouse.y) * 0.05;
+
+        particles.position.x = -smoothedMouse.x * (particleHoverFactor * 0.6);
+        particles.position.y = -smoothedMouse.y * (particleHoverFactor * 0.6);
+
+        if (!disableRotation) {
+          particles.rotation.x = Math.sin(elapsed * 0.0002) * 0.1 - smoothedMouse.y * 0.06;
+          particles.rotation.y = Math.cos(elapsed * 0.0005) * 0.15 + smoothedMouse.x * 0.06;
+          particles.rotation.z += 0.01 * speed;
+        }
       } else {
         particles.position.x = 0;
         particles.position.y = 0;
-      }
 
-      if (!disableRotation) {
-        particles.rotation.x = Math.sin(elapsed * 0.0002) * 0.1;
-        particles.rotation.y = Math.cos(elapsed * 0.0005) * 0.15;
-        particles.rotation.z += 0.01 * speed;
+        if (!disableRotation) {
+          particles.rotation.x = Math.sin(elapsed * 0.0002) * 0.1;
+          particles.rotation.y = Math.cos(elapsed * 0.0005) * 0.15;
+          particles.rotation.z += 0.01 * speed;
+        }
       }
 
       renderer.render({ scene: particles, camera });
@@ -227,7 +247,8 @@ const Particles: React.FC<ParticlesProps> = ({
     return () => {
       window.removeEventListener('resize', resize);
       if (moveParticlesOnHover) {
-        container.removeEventListener('mousemove', handleMouseMove);
+        window.removeEventListener('mousemove', handleMouseMove);
+        document.removeEventListener('mouseleave', handleMouseLeave);
       }
       cancelAnimationFrame(animationFrameId);
       if (container.contains(gl.canvas)) {

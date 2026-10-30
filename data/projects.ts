@@ -5,58 +5,6 @@ export type Tech = {
 
 export const allProjects = [
   {
-    id: 1,
-    title: "Omahku – Mobile App Design",
-    category: "ui",
-    image: "/images/dsg1.png",
-    description:
-      "User Interface design for a smart home automation app, focusing on intuitive control of IoT devices and user-friendly navigation.",
-    link: "https://www.behance.net/gallery/233377223/Omahku-Mobile-App-Design",
-    techStack: [
-      { name: "Figma", icon: "/images/figma2.svg" },
-      { name: "Canva", icon: "/images/canva2.svg" },
-    ] as Tech[],
-  },
-  {
-    id: 2,
-    title: "Belinasgor. - Mobile App Design",
-    category: "ui",
-    image: "/images/dsg4.png",
-    description:
-      "Mobile application design for a food delivery service, featuring an appetizing layout and seamless ordering flow for customers.",
-    link: "https://www.behance.net/gallery/234709959/Belinasgor-Mobile-App-Design",
-    techStack: [
-      { name: "Figma", icon: "/images/figma2.svg" },
-      { name: "Canva", icon: "/images/canva2.svg" },
-    ] as Tech[],
-  },
-  {
-    id: 12,
-    title: "Personal Portfolio - Web App Design",
-    category: "ui",
-    image: "/images/dsg5.png",
-    description:
-      "High-fidelity web design concept for a personal portfolio, emphasizing aesthetic appeal, layout balance, and modern visual trends.",
-    link: "https://www.behance.net/gallery/233496589/Personal-Portfolio-Website-Design",
-    techStack: [
-      { name: "Figma", icon: "/images/figma2.svg" },
-      { name: "Canva", icon: "/images/canva2.svg" },
-    ] as Tech[],
-  },
-  {
-    id: 20,
-    title: "Landing Page Website Design - AdsFlow.ai",
-    category: "ui",
-    image: "/images/dsg6.png",
-    description:
-      "Landing page design for AdsFlow.ai, an AI-powered advertising platform, focusing on user engagement and conversion optimization.",
-    link: "https://www.behance.net/gallery/243397715/Landing-Page-Website-AdsFlowai",
-    techStack: [
-      { name: "Figma", icon: "/images/figma2.svg" },
-      { name: "Canva", icon: "/images/canva2.svg" },
-    ] as Tech[],
-  },
-  {
     id: 10,
     title: "Relasibaik.",
     category: "web",
@@ -92,6 +40,54 @@ export const allProjects = [
       { name: "Tailwindcss", icon: "/images/tailwindcss2.svg" },
       { name: "Javascript", icon: "/images/js.svg" },
       { name: "HTML5", icon: "/images/html5.svg" },
+      { name: "MySQL", icon: "/images/mysql.svg" },
+    ] as Tech[],
+  },
+  {
+    id: 21,
+    title: "Manajemen Inventory - AC Niko",
+    category: "web",
+    image: "/images/code16.png",
+    description:
+      "A web-based inventory management system for AC Niko, providing comprehensive inventory tracking and management features.",
+    link: "https://github.com/gengtzy/management_inventory_nikoTeknik",
+    visit: "https://management-inventory-theta.vercel.app/login",
+    techStack: [
+      { name: "Node.js", icon: "/images/nodejs.svg" },
+      { name: "Laravel", icon: "/images/laravel2.svg" },
+      { name: "Tailwindcss", icon: "/images/tailwindcss2.svg" },
+      { name: "MySQL", icon: "/images/mysql.svg" },
+    ] as Tech[],
+  },
+  {
+    id: 22,
+    title: "Nurse Recharge",
+    category: "web",
+    image: "/images/code17.png",
+    description:
+      "Nurse Recharge is a web-based application for managing nurse schedules and availability.",
+    link: "https://github.com/gengtzy/nurse-questionnaire",
+    visit: "",
+    techStack: [
+      { name: "Node.js", icon: "/images/nodejs.svg" },
+      { name: "Laravel", icon: "/images/laravel2.svg" },
+      { name: "Tailwindcss", icon: "/images/tailwindcss2.svg" },
+      { name: "MySQL", icon: "/images/mysql.svg" },
+    ] as Tech[],
+  },
+  {
+    id: 23,
+    title: "Portal-Abdiriset",
+    category: "web",
+    image: "/images/code18.png",
+    description:
+      "Portal-Abdiriset is a web-based platform for managing research and community service activities for academic institutions.",
+    link: "https://github.com/gengtzy",
+    visit: "https://abdiriset.id/",
+    techStack: [
+      { name: "Node.js", icon: "/images/nodejs.svg" },
+      { name: "Laravel", icon: "/images/laravel2.svg" },
+      { name: "Tailwindcss", icon: "/images/tailwindcss2.svg" },
       { name: "MySQL", icon: "/images/mysql.svg" },
     ] as Tech[],
   },
@@ -305,5 +301,57 @@ export const allProjects = [
     link: "https://github.com/gengtzy",
     visit: "https://sdgimatama.wordpress.com/",
     techStack: [{ name: "Wordpress", icon: "/images/wordpress.svg" }] as Tech[],
+  },
+  {
+    id: 1,
+    title: "Omahku – Mobile App Design",
+    category: "ui",
+    image: "/images/dsg1.png",
+    description:
+      "User Interface design for a smart home automation app, focusing on intuitive control of IoT devices and user-friendly navigation.",
+    link: "https://www.behance.net/gallery/233377223/Omahku-Mobile-App-Design",
+    techStack: [
+      { name: "Figma", icon: "/images/figma2.svg" },
+      { name: "Canva", icon: "/images/canva2.svg" },
+    ] as Tech[],
+  },
+  {
+    id: 2,
+    title: "Belinasgor. - Mobile App Design",
+    category: "ui",
+    image: "/images/dsg4.png",
+    description:
+      "Mobile application design for a food delivery service, featuring an appetizing layout and seamless ordering flow for customers.",
+    link: "https://www.behance.net/gallery/234709959/Belinasgor-Mobile-App-Design",
+    techStack: [
+      { name: "Figma", icon: "/images/figma2.svg" },
+      { name: "Canva", icon: "/images/canva2.svg" },
+    ] as Tech[],
+  },
+  {
+    id: 12,
+    title: "Personal Portfolio - Web App Design",
+    category: "ui",
+    image: "/images/dsg5.png",
+    description:
+      "High-fidelity web design concept for a personal portfolio, emphasizing aesthetic appeal, layout balance, and modern visual trends.",
+    link: "https://www.behance.net/gallery/233496589/Personal-Portfolio-Website-Design",
+    techStack: [
+      { name: "Figma", icon: "/images/figma2.svg" },
+      { name: "Canva", icon: "/images/canva2.svg" },
+    ] as Tech[],
+  },
+  {
+    id: 20,
+    title: "Landing Page Website Design - AdsFlow.ai",
+    category: "ui",
+    image: "/images/dsg6.png",
+    description:
+      "Landing page design for AdsFlow.ai, an AI-powered advertising platform, focusing on user engagement and conversion optimization.",
+    link: "https://www.behance.net/gallery/243397715/Landing-Page-Website-AdsFlowai",
+    techStack: [
+      { name: "Figma", icon: "/images/figma2.svg" },
+      { name: "Canva", icon: "/images/canva2.svg" },
+    ] as Tech[],
   },
 ];
